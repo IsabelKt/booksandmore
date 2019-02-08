@@ -16,7 +16,6 @@ router.post("/admin", function(req, res) {
   req.body
 
  ).then(function(Product) {
-  // We have access to the new users as an argument inside of the callback function
   res.json(Product);
   console.log(Product);
  });
@@ -27,7 +26,6 @@ router.post("/admin", function(req, res) {
 router.get("/home", function(req, res) {
   console.log("hello");
   Product.find({}).then(function(product) {
-    // We have access to the new users as an argument inside of the callback function
     res.json(product)
    });
 }
@@ -39,7 +37,6 @@ router.get("/product/:upc", function(req, res) {
   req.body
 
  ).then(function(Product) {
-  // We have access to the new users as an argument inside of the callback function
   res.json(Product);
   console.log(Product);
  });
